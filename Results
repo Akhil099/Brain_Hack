@@ -1,0 +1,51 @@
+HuberLoss
+akhil_rao@akhils-air julia_nn_build % julia sm_ann_huber_loss.jl 
+FREESURFER_HOME: not defined
+┌ Warning: Layer with Float32 parameters got Float64 input.
+│   The input will be converted, but any earlier layers may be very slow.
+│   layer = Dense(8 => 64, relu)  # 576 parameters
+│   summary(x) = "8×180720 Matrix{Float64}"
+└ @ Flux ~/.julia/packages/Flux/Wz6D4/src/layers/stateless.jl:60
+Model output size: (6, 180720)
+Label size: (6, 180720)
+Current loss: 0.017226888624178753
+Rmse loss on test_data: 0.5069655849164192
+Huber loss on test_data: 0.017237809107639314
+Mae loss in the test_data: 0.3688398459512561
+mse loss in the test_data: 0.257014104289647
+
+
+MAE
+akhil_rao@akhils-air julia_nn_build % julia sm_ann_mae.jl
+FREESURFER_HOME: not defined
+┌ Warning: Layer with Float32 parameters got Float64 input.
+│   The input will be converted, but any earlier layers may be very slow.
+│   layer = Dense(8 => 64, relu)  # 576 parameters
+│   summary(x) = "8×180720 Matrix{Float64}"
+└ @ Flux ~/.julia/packages/Flux/Wz6D4/src/layers/stateless.jl:60
+Model output size: (6, 180720)
+Label size: (6, 180720)
+Current loss: 0.3908652726705708
+Rmse loss on test_data: 0.5665611418752681
+Mae loss on test_data: 0.39072541164718566
+Huber_loss loss in the test_data: 0.14813283352250817
+mse loss in the test_data: 0.3209915274830077
+
+
+MSE
+akhil_rao@akhils-air julia_nn_build % julia sm_ann_mse.jl
+FREESURFER_HOME: not defined
+┌ Warning: Layer with Float32 parameters got Float64 input.
+│   The input will be converted, but any earlier layers may be very slow.
+│   layer = Dense(8 => 64, relu)  # 576 parameters
+│   summary(x) = "8×180720 Matrix{Float64}"
+└ @ Flux ~/.julia/packages/Flux/Wz6D4/src/layers/stateless.jl:60
+Model output size: (6, 180720)
+Label size: (6, 180720)
+Current loss: 0.3362374223199456
+Rmse loss on test_data: 0.5792247356824082
+Mse loss on test_data: 0.3355012944263557
+Huber_loss loss in the test_data: 0.15823127305120913
+mse loss in the test_data: 0.42799389060074655
+
+
